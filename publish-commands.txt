@@ -1,0 +1,184 @@
+================================================================================
+  SEO TRACKER - PUBLISH COMMANDS
+  Copy and paste these commands in PowerShell
+================================================================================
+
+⚠️ BEFORE RUNNING: Replace YOUR-USERNAME with your actual GitHub username!
+
+================================================================================
+STEP 1: CREATE GITHUB REPOSITORY
+================================================================================
+
+1. Go to: https://github.com/new
+2. Repository name: seo-tracker
+3. Description: Lightweight JavaScript tracking library
+4. Visibility: Public
+5. Click "Create repository"
+6. Copy your GitHub username
+
+================================================================================
+STEP 2: UPDATE YOUR USERNAME IN FILES
+================================================================================
+
+Open these files and replace 'yourusername' with YOUR GitHub username:
+- package.json (line 2: "@yourusername/seo-tracker")
+- package.json (line 33: repository URL)
+- README.md (all CDN URLs and GitHub links)
+
+================================================================================
+STEP 3: PUSH TO GITHUB
+================================================================================
+
+Copy and paste these commands (REPLACE YOUR-USERNAME first):
+
+cd "c:\Tharshigan\Practice Project\Google test tools project\SEO-Admin-board\seo-tracker-package"
+
+git init
+
+git add .
+
+git commit -m "Initial release v1.0.0"
+
+git remote add origin https://github.com/YOUR-USERNAME/seo-tracker.git
+
+git branch -M main
+
+git push -u origin main
+
+================================================================================
+STEP 4: CREATE GITHUB RELEASE
+================================================================================
+
+1. Go to: https://github.com/YOUR-USERNAME/seo-tracker
+2. Click "Releases" → "Create a new release"
+3. Tag: v1.0.0
+4. Title: v1.0.0 - Initial Release
+5. Click "Publish release"
+
+================================================================================
+STEP 5: PUBLISH TO NPM
+================================================================================
+
+First, create npm account if you don't have one:
+- Go to: https://www.npmjs.com/signup
+- Verify your email
+
+Then run these commands:
+
+cd "c:\Tharshigan\Practice Project\Google test tools project\SEO-Admin-board\seo-tracker-package"
+
+npm login
+
+npm publish --access public
+
+================================================================================
+STEP 6: VERIFY PUBLICATION
+================================================================================
+
+Check your package on npm:
+https://www.npmjs.com/package/@YOUR-USERNAME/seo-tracker
+
+Check your repository on GitHub:
+https://github.com/YOUR-USERNAME/seo-tracker
+
+================================================================================
+TEST INSTALLATION
+================================================================================
+
+Test if users can install your package:
+
+mkdir C:\temp\test-seo-tracker
+cd C:\temp\test-seo-tracker
+npm init -y
+npm install @YOUR-USERNAME/seo-tracker
+dir node_modules\@YOUR-USERNAME\seo-tracker
+
+================================================================================
+AFTER PUBLISHING - HOW USERS WILL USE YOUR LIBRARY
+================================================================================
+
+METHOD 1: npm install
+---------------------
+npm install @YOUR-USERNAME/seo-tracker
+
+// In JavaScript
+import SEOTracker from '@YOUR-USERNAME/seo-tracker';
+
+SEOTracker.init({
+  apiUrl: 'https://your-admin.com/api/tracking',
+  projectId: 'project-uuid'
+});
+
+
+METHOD 2: CDN (jsDelivr)
+------------------------
+<script src="https://cdn.jsdelivr.net/npm/@YOUR-USERNAME/seo-tracker@latest/seo-tracker.js"></script>
+<script>
+  SEOTracker.init({
+    apiUrl: 'https://your-admin.com/api/tracking',
+    projectId: 'project-uuid'
+  });
+</script>
+
+
+METHOD 3: GitHub CDN
+--------------------
+<script src="https://cdn.jsdelivr.net/gh/YOUR-USERNAME/seo-tracker@v1.0.0/seo-tracker.js"></script>
+
+================================================================================
+UPDATE YOUR MAIN PROJECT DOCS
+================================================================================
+
+Add installation instructions to your main project:
+c:\Tharshigan\Practice Project\Google test tools project\SEO-Admin-board\src\app\docs\guide\page.js
+
+Update the CDN URL in examples:
+<script src="https://cdn.jsdelivr.net/npm/@YOUR-USERNAME/seo-tracker@latest/seo-tracker.js"></script>
+
+================================================================================
+PUBLISHING FUTURE UPDATES
+================================================================================
+
+When you make changes:
+
+cd "c:\Tharshigan\Practice Project\Google test tools project\SEO-Admin-board\seo-tracker-package"
+
+npm version patch
+
+git add .
+git commit -m "Version 1.0.1: Bug fixes"
+git push
+git push --tags
+
+npm publish
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+If npm publish fails with 403:
+→ Run: npm publish --access public
+
+If git push fails:
+→ Check remote: git remote -v
+→ Update remote: git remote set-url origin https://github.com/YOUR-USERNAME/seo-tracker.git
+
+If package name taken:
+→ Use scoped package: @YOUR-USERNAME/seo-tracker (already configured)
+
+If CDN not loading:
+→ Wait 5-10 minutes for cache
+→ Clear browser cache
+→ Verify package published: https://www.npmjs.com/package/@YOUR-USERNAME/seo-tracker
+
+================================================================================
+SUPPORT
+================================================================================
+
+For detailed instructions, see:
+- PUBLISH_GUIDE.md (in this folder)
+- GITHUB_SETUP.md (in this folder)
+
+Questions? Create an issue on GitHub after publishing.
+
+================================================================================

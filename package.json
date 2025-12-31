@@ -1,0 +1,43 @@
+{
+  "name": "@tharshigan-zincat/seo-tracker",
+  "version": "1.0.0",
+  "description": "Lightweight JavaScript tracking library for capturing user behavior and analytics",
+  "main": "seo-tracker.js",
+  "types": "seo-tracker.d.ts",
+  "files": [
+    "seo-tracker.js",
+    "seo-tracker.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "analytics",
+    "tracking",
+    "seo",
+    "user-behavior",
+    "event-tracking",
+    "web-analytics",
+    "page-views",
+    "click-tracking",
+    "scroll-tracking",
+    "privacy-first",
+    "cdn",
+    "browser"
+  ],
+  "author": "Tharshigan <tharshigan@zincat.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tharshigan-zincat/admin-lib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Tharshigan-zincat/admin-lib/issues"
+  },
+  "homepage": "https://github.com/Tharshigan-zincat/admin-lib#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
