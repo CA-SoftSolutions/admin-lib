@@ -1,4 +1,4 @@
-# 📊 SEO Tracker
+# 📊 Tracker
 
 > Lightweight, privacy-first JavaScript tracking library for capturing user behavior and web analytics
 
@@ -23,7 +23,7 @@
 ### Via CDN (jsDelivr)
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/Tharshigan-zincat/admin-lib@latest/seo-tracker.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/CA-SoftSolutions/admin-lib@latest/seo-tracker.js"></script>
 ```
 
 ### Via CDN (unpkg)
@@ -41,7 +41,7 @@ npm install seo-tracker
 ### Via GitHub Raw
 
 ```html
-<script src="https://raw.githubusercontent.com/Tharshigan-zincat/admin-lib/main/seo-tracker.js"></script>
+<script src="https://raw.githubusercontent.com/CA-SoftSolutions/admin-lib/main/seo-tracker.js"></script>
 ```
 
 ## 🚀 Quick Start
@@ -58,7 +58,7 @@ npm install seo-tracker
   <h1>Welcome!</h1>
 
   <!-- Load tracker -->
-  <script src="https://cdn.jsdelivr.net/gh/Tharshigan-zincat/admin-lib@latest/seo-tracker.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/CA-SoftSolutions/admin-lib@latest/seo-tracker.js"></script>
   
   <!-- Initialize -->
   <script>
@@ -127,7 +127,7 @@ export default {
 Add to your theme's `footer.php` before the closing `</body>` tag:
 
 ```php
-<script src="https://cdn.jsdelivr.net/gh/Tharshigan-zincat/admin-lib@latest/seo-tracker.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/CA-SoftSolutions/admin-lib@latest/seo-tracker.js"></script>
 <script>
   SEOTracker.init({
     apiUrl: 'https://your-domain.com/api/tracking',
@@ -375,7 +375,7 @@ Events sent to your API:
 ### Setup
 
 ```bash
-git clone https://github.com/Tharshigan-zincat/admin-lib.git
+git clone https://github.com/CA-SoftSolutions/admin-lib.git
 cd seo-tracker
 npm install
 ```
@@ -413,7 +413,7 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) first.
 
 ## 📄 License
 
-MIT © [Tharshigan](https://github.com/Tharshigan-zincat)
+MIT © [CA SoftSolutions](https://github.com/CA-SoftSolutions)
 
 See [LICENSE](LICENSE) for details.
 
@@ -425,17 +425,17 @@ See [LICENSE](LICENSE) for details.
 
 ## 📧 Support
 
-- 📖 [Documentation](https://github.com/Tharshigan-zincat/admin-lib/wiki)
-- 🐛 [Issue Tracker](https://github.com/Tharshigan-zincat/admin-lib/issues)
-- 💬 [Discussions](https://github.com/Tharshigan-zincat/admin-lib/discussions)
+- 📖 [Documentation](https://github.com/CA-SoftSolutions/admin-lib/wiki)
+- 🐛 [Issue Tracker](https://github.com/CA-SoftSolutions/admin-lib/issues)
+- 💬 [Discussions](https://github.com/CA-SoftSolutions/admin-lib/discussions)
 
 ## 🔗 Links
 
-- [GitHub Repository](https://github.com/Tharshigan-zincat/admin-lib)
+- [GitHub Repository](https://github.com/CA-SoftSolutions/admin-lib)
 - [npm Package](https://www.npmjs.com/package/seo-tracker)
 - [Admin Dashboard](https://your-domain.com)
 - [Live Demo](https://your-domain.com/example.html)
 
 ---
 
-Made with ❤️ by [Tharshigan](https://github.com/Tharshigan-zincat)
+Made with ❤️ by [CA SoftSolutions](https://github.com/CA-SoftSolutions)
